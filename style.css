@@ -15,15 +15,18 @@ span {
   transform: translate(-50%, -50%);
   pointer-events: none;
   animation: animate 6s linear;
+  overflow: hidden;
 }
 
 @keyframes animate {
   0% {
     transform: translate(-50%, -50%);
     opacity: 1;
+    filter: hue-rotate(0);
   }
 
   100% {
     transform: translate(-50%, -5000%);
+    filter: hue-rotate(720deg);
   }
 }
